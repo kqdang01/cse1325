@@ -15,8 +15,13 @@ public class ToDo {
     }
 
     public static void PrintItemArray(Item[] itemArray) {
-        for (let i = 1; i < 6; ++i) {
-
+        for (int i = 1; i < 6; ++i) {
+            for (Item j : itemArray) {
+                if (j.priority == i) {
+                    System.out.print(j.priority + " ");
+                    System.out.println(j.task);
+                }
+            }
         }
     }
 
@@ -26,7 +31,6 @@ public class ToDo {
         Item[] itemArray = new Item[itemObjects];
 
         PopulateItemArray(itemArray);
-
-        for (Item i : itemArray) System.out.println(i.task);
+        PrintItemArray(itemArray);
     }
 }
