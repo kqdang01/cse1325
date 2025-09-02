@@ -18,9 +18,8 @@ public class ToDo {
     public static void PrintItemArray(Item[] itemArray) {
         for (int i = 1; i < 6; ++i) {
             for (Item j : itemArray) {
-                if (j.priority == i) {
-                    System.out.print(j.priority + " ");
-                    System.out.println(j.task);
+                if (j.isPriority(i)) {
+                    System.out.println(j);
                 }
             }
         }
