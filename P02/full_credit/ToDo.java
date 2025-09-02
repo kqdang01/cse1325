@@ -5,7 +5,7 @@ public class ToDo {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < itemArray.length; ++i) {
             Item item = new Item();
-            System.out.print("Task#" + (i + 1) + ": ");
+            System.out.print("Task #" + (i + 1) + ": ");
             item.task = scanner.nextLine();
             System.out.print("Priority from 1 (highest) to 5 (lowest): ");
             item.priority = scanner.nextInt();
