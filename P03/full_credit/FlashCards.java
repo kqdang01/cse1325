@@ -57,6 +57,7 @@ public class FlashCards {
             System.out.println("* " + card.getTerm());
         }
 
+        //run loop to quiz users on random card from deck (comment cause i forgot to commit #2)
         while (true) {
             Card randCard = deck[random.nextInt(deck.length)];
             System.out.println(randCard);
