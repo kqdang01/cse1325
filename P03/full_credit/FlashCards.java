@@ -50,6 +50,7 @@ public class FlashCards {
     }
     
     public static void main(String[] args) {
+        //create deck and print out (comment cause i forgot to commit #1)
         Card[] deck = loadDeck();
         System.out.println("\nVocabulary Terms:\n");
         for (Card card : deck) {
