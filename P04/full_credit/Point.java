@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Point {
     private double x;
     private double y;
@@ -27,7 +29,7 @@ public class Point {
     }
     @Override
     public int hashCode() {
-        return Objects.hash(this.x, this.y)
+        return Objects.hash(this.x, this.y);
     }
     @Override
     public String toString() {
