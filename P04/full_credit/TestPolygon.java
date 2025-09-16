@@ -11,7 +11,10 @@ public class TestPolygon {
             polygon1.addPoint(new Point());
             polygon1.addPoint(new Point(3, 0));
             polygon1.addPoint(new Point(3, 4));
-            if (polygon1.perimeter() != 12) System.err.println("Incorrect polygon perimeter. Expected 12, got " + polygon1.perimeter());
+            if (polygon1.perimeter() != 12) {
+                System.err.println("Incorrect polygon perimeter. Expected 12, got " + polygon1.perimeter());
+                System.exit(1);
+            } 
             System.out.println("Test Vector #2\n");
             try {
                 Polygon polygon2 = new Polygon();
@@ -23,6 +26,7 @@ public class TestPolygon {
                 }
                 else {
                     System.err.println("Expected type IllegalArgumentException, got " + e);
+                    System.exit(1);
                 }
             }
             System.out.println("Test Vector #3\n");
@@ -36,6 +40,7 @@ public class TestPolygon {
                 }
                 else {
                     System.err.println("Expected RuntimeException, got " + e);
+                    System.exit(1);
                 }
             }
             System.out.println("Test Vector #4\n");
@@ -51,6 +56,7 @@ public class TestPolygon {
                 }
                 else {
                     System.err.println("Expected RuntimeException, got " + e);
+                    System.exit(1);
                 }
             }
         } catch (Exception e) {
