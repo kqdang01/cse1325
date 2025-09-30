@@ -2,7 +2,7 @@ public class Rating {
     private int stars;
     private Comment review;
     
-    public Rating(int stars; Comment review) {
+    public Rating(int stars, Comment review) {
         if (!(stars >= 1 && stars <= 5)) throw new IllegalArgumentException("Invalid stars.");
         this.stars = stars;
         this.review = review;
